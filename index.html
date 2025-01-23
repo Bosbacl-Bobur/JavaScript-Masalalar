@@ -10,6 +10,62 @@
 
     
     <script src="./js/script.js">
+        let a = true;
+        let b = false;
+        console.log( a || b); // true
+        console.log(!!!b); // true
+        console.log(!NaN ); // true
+        console.log(!!'0'); // true
+        console.log(!![]); // true
+        console.log(!!{}); // true
+        console.log(!!function(){}); // true
+        console.log(!!Infinity); // true
+        console.log(!!true); // true
+        console.log(!!a && !!b); // true
+        console.log(!!a || !!b); // true
+        console.log(!!0); // false
+        console.log(!!-0); // false
+        console.log(!!''); // false
+        console.log(!!null); // false
+        console.log(!!undefined); // false
+        console.log(!!NaN); //false
+        console.log(!false); // true
+        // console.log(true && undefined); // undefined
+        // console.log(typeof undefined); // undefined
+        // console.log(typeof NaN); // number
+        // console.log(typeof 0);   // number
+        // console.log(typeof Infinity); // number
+        // console.log(typeof '');  // string
+        // console.log(typeof Symbol()); // symbol
+        // console.log(typeof function(){}); // function
+        // console.log(typeof TypeError); // function
+        // console.log(typeof Function()); // function
+        // console.log(typeof new Function()); // function
+        // console.log(typeof null); // object
+        // console.log(typeof []);  // object
+        // console.log(typeof {});  // object  
+        // console.log(typeof globalThis); // object
+        // console.log(typeof  Object()); // object
+        // console.log(typeof new Object()); // object
+        // console.log(typeof new Date()); // object
+        // console.log(typeof new Error()); // object
+        // console.log(typeof new RegExp()); // object
+        // console.log(typeof this); // object
+        // console.log(typeof window); // undefined 
+
+        // console.error(typeof Object); // Qizil function
+        // console.error(typeof this); // Qizil object
+
+        // console.log(typeof new TypeError()); // object
+        // console.log(typeof new SyntaxError()); // object  -  // TypeError
+        // console.log(typeof SyntaxError); // function      -  // TypeError
+        // console.log(typeof new Promise()); // object      -  // TypeError
+        // console.log(typeof new Promise()); // object   -  // TypeError
+        // console.log(typeof (BigInt())); // bigint      -  // TypeError
+        // Function Expression bu funksiya yaratish usuli bo'lib, funksiya o'zgaruvchiga 
+        // tayinlanadi. Oddiy qilib aytganda, funksiyani nom berib yaratish o'rniga, 
+        // uni o'zgaruvchiga saqlaymiz.
+
     </script>
 </body>
 </html>
