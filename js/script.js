@@ -83,8 +83,8 @@ const products = {
 		}
 	},
 	remove() {
-		count.textContent = 0
-		this.basketProduct = []
-		this.totalPrice = 0
+		count.textContent = 0;
+		this.basketProduct = [];
+		this.totalPrice = 0;
 	}
 }

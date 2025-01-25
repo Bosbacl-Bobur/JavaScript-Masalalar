@@ -36,6 +36,7 @@
 			.card {
 				width: 250px;
 				background-color: #fff;
+                /* color: white; */
 				border-radius: 8px;
 				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 				overflow: hidden;
@@ -134,6 +135,21 @@
 			.notifBtn i {
 				font-size: 35px;
 			}
+            .delete {
+                padding: 7px 6px;
+                border: none;
+                border-radius: 5px;
+                background-color: #f44336;
+                color: #fff;
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .delete p {
+                color: #fff;
+            }
 		</style>
 	</head>
 	<body>
@@ -157,67 +173,92 @@
 		<div class="container parent_card">
 			<div class="card">
 				<img
-					src="https://3dplanet.am/wp-content/uploads/2021/09/13-Midnight.jpg"
+					src="./img/shopping.webp"
 					alt="Product Image"
 				/>
 				<div class="card-content">
 					<h3 class="card-title">Iphone 13</h3>
 					<p class="card-price">4000$</p>
-					<button onclick="products.bought(1)" class="card-button">
-						Savatga qo'shish
-					</button>
+					<div class="btn_group">
+                        <button onclick="products.bought(1)" class="card-button">
+                            Add to Cart
+                        </button>
+                        <button class="delete">
+                            <p>delete</p>
+                        </button>
+                    </div>
 				</div>
 			</div>
 			<div class="card">
 				<img
-					src="https://3dplanet.am/wp-content/uploads/2021/09/13-Midnight.jpg"
+					src="./img/shopping.webp"
 					alt="Product Image"
 				/>
 				<div class="card-content">
 					<h3 class="card-title">Iphone 14</h3>
 					<p class="card-price">5000$</p>
-					<button onclick="products.bought(2)" class="card-button">
-						Savatga qo'shish
-					</button>
+					<div class="btn_group">
+                        <button onclick="products.bought(2)" class="card-button">
+                            Add to Cart
+                        </button>
+                        <button class="delete">
+                            <p>delete</p>
+                        </button>
+                    </div>
 				</div>
 			</div>
 			<div class="card">
 				<img
-					src="https://3dplanet.am/wp-content/uploads/2021/09/13-Midnight.jpg"
+					src="./img/shopping.webp"
 					alt="Product Image"
 				/>
 				<div class="card-content">
 					<h3 class="card-title">Iphone 15</h3>
 					<p class="card-price">6000$</p>
-					<button onclick="products.bought(3)" class="card-button">
-						Savatga qo'shish
-					</button>
+					<div class="btn_group">
+                        <button onclick="products.bought(3)" class="card-button">
+                            Add to Cart
+                        </button>
+                        <button class="delete">
+                            <p>delete</p>
+                        </button>
+                    </div>
 				</div>
 			</div>
 			<div class="card">
 				<img
-					src="https://3dplanet.am/wp-content/uploads/2021/09/13-Midnight.jpg"
+					src="./img/shopping.webp"
 					alt="Product Image"
 				/>
 				<div class="card-content">
 					<h3 class="card-title">Iphone 16</h3>
 					<p class="card-price">7000$</p>
-					<button onclick="products.bought(4)" class="card-button">
-						Savatga qo'shish
-					</button>
+                    <div class="btn_group">
+                        <button onclick="products.bought(4)" class="card-button">
+                            Add to Cart
+                        </button>
+                        <button class="delete">
+                            <p>delete</p>
+                        </button>
+                    </div>
 				</div>
 			</div>
 			<div class="card">
 				<img
-					src="https://3dplanet.am/wp-content/uploads/2021/09/13-Midnight.jpg"
+					src="./img/shopping.webp"
 					alt="Product Image"
 				/>
 				<div class="card-content">
 					<h3 class="card-title">Iphone 13 pro</h3>
 					<p class="card-price">4500$</p>
-					<button onclick="products.bought(5)" class="card-button">
-						Savatga qo'shish
-					</button>
+					<div class="btn_group">
+                        <button onclick="products.bought(5)" class="card-button">
+                            Add to Cart
+                        </button>
+                        <button class="delete">
+                            <p>delete</p>
+                        </button>
+                    </div>
 				</div>
 			</div>
 		</div>
