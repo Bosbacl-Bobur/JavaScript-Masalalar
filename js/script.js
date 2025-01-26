@@ -1,10 +1,4 @@
 'use strict'
-/* 1.Productlarni yig'ib olish */
-/* 2.savatga qushish funksiyasini yozish */
-/* 3.showSelected  funksiyasini yozish */
-/* 4.showDiscount funksiyasini yozish */
-/* 5.remove funksiyasini yozish */
-/* 6.count funksiyasini yozish */
 const count = document.getElementById("count")
 
 const products = {
@@ -56,7 +50,8 @@ const products = {
 				alert(`${selectedProduct.productName} mahsuloti savatga qo'shildi Narxi:${selectedProduct.price}$`)
 			}, 200)
 		} else {
-			alert('Maxsulot mavjud emas!')
+			alert('Mahsulot mavjud emas!')
+
 		}
 
 	},
@@ -69,14 +64,14 @@ const products = {
 			alert(iteration_product.join(''))
 			alert(`Jami narx: ${this.totalPrice}$`)
 		} else {
-			alert(`Savatda maxsulot yo'q!`)
+			alert(`Savatga maxsulot yo'q!`);
 		}
 	},
 	showDiscount() {
 		if (this.totalPrice > this.discount) {
-			const confirmed = confirm("Siz 10% lik chegirmaga ega bo'ldingiz foydalanasizmi.")
+			const confirmed = confirm("Siz 10% lik chegirmaga ega bo'ldingiz foydalasizmi.")
 			if (confirmed) {
-				alert(`Sizning mahsulotlaringiz chegirma narxi:${this.totalPrice - (this.totalPrice * 0.1)}$`)
+				alert(`Sizning mahsulotlaringiz chegirm narxi:${this.totalPrice - (this.totalPrice * 0.1)}$`)
 			}
 		} else {
 			alert("Siz chegirmaga ega bo'lishingiz uchun 10000$ dan ko'proq mahsulot xarid qilishingiz kerak")
@@ -86,5 +81,21 @@ const products = {
 		count.textContent = 0;
 		this.basketProduct = [];
 		this.totalPrice = 0;
-	}
+	},
+
+    deleteProduct(id) {
+        const productIndex = this.basketProduct.findIndex(product => product.id === id);
+        if (productIndex !== -1) {
+            const removedProduct = this.basketProduct.splice(productIndex, 1)[0];
+            this.totalPrice -= removedProduct.price;
+            count.textContent = this.basketProduct.length;
+            
+            setTimeout(() => {
+            alert(`${removedProduct.productName} mahsuloti savatdan o'chirildi!`);
+        }, 200)
+        } else {
+            alert('Ushbu mahsulot savatda mavjud emas!');
+        }
+    }
+    
 }
