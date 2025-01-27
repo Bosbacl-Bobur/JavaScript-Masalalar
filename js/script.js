@@ -53,7 +53,6 @@ const products = {
 			alert('Mahsulot mavjud emas!')
 
 		}
-
 	},
 	showSelectedProduct() {
 		const iteration_product = this.basketProduct.map((product, index) => {
@@ -97,5 +96,4 @@ const products = {
             alert('Ushbu mahsulot savatda mavjud emas!');
         }
     }
-    
 }
