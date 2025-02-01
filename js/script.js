@@ -7,33 +7,63 @@ const products = {
 			id: 1,
 			productName: "Iphone 13",
 			price: 4000,
-			category:"iphone"
 		},
 		{
 			id: 2,
 			productName: "Iphone 14",
 			price: 5000,
-			category:"iphone"
 		},
 		{
 			id: 3,
 			productName: "Iphone 15",
 			price: 6000,
-			category:"iphone"
 		},
 		{
 			id: 4,
 			productName: "Iphone 16",
 			price: 7000,
-			category:"iphone"
 		},
 		{
 			id: 5,
 			productName: "Iphone 13 pro",
 			price: 4500,
-			category:"iphone"
 		},
-	],
+		{
+			id: 6,
+			productName: "Hatake Kakashi",
+			price: 200,
+		},
+		{
+			id: 7,
+			productName: "Ichigo Kurosaki",
+			price: 230,
+		},
+		{
+			id: 8,
+			productName: "Kamado Tanjiro",
+			price: 205,
+		},
+		{
+			id: 9,
+			productName: "Goku",
+			price: 250,
+		},
+		{
+			id: 10,
+			productName: "Minato Namikaze",
+			price: 270,
+		},
+	], 
+	productType:[
+        {
+            id:1,
+            type:"All"
+        },
+        {
+            id:2,
+            type:"Toys"
+        },
+    ],
 	totalPrice: 0,
 	basketProduct: [],
 	discount: 10000,
@@ -45,13 +75,12 @@ const products = {
 			this.basketProduct.push(selectedProduct)
 			this.totalPrice += selectedProduct.price
 			count.textContent++
-
+			
 			setTimeout(() => {
-				alert(`${selectedProduct.productName} mahsuloti savatga qo'shildi Narxi:${selectedProduct.price}$`)
+				alert(`${selectedProduct.productName} mahsuloti savatga qo'shildi Narxi: ${selectedProduct.price}$`)
 			}, 200)
 		} else {
 			alert('Mahsulot mavjud emas!')
-
 		}
 	},
 	showSelectedProduct() {
@@ -81,7 +110,6 @@ const products = {
 		this.basketProduct = [];
 		this.totalPrice = 0;
 	},
-
     deleteProduct(id) {
         const productIndex = this.basketProduct.findIndex(product => product.id === id);
         if (productIndex !== -1) {
@@ -97,3 +125,22 @@ const products = {
         }
     }
 }
+// filterByCategory(type) {
+// 	if (type === "All") {
+// 		alert(`All: \n + this.productArr.map(p => ${p.productname} - ${p.price}$).join("\n")`);
+// 		return;
+// 	}
+
+// 	const filteredProducts = this.productArr.filter(product => product.productname.toLowerCase().includes(type.toLowerCase()));
+
+// 	if (filteredProducts.length > 0) {
+// 		alert(`${type} turidagi mahsulotlar:\n + filteredProducts.map(p => ${p.productname} - ${p.price}$).join("\n")`);
+// 	} else {
+// 		alert(`${type} turidagi mahsulotlar topilmadi!`);
+// 	}
+// },
+// remove() {
+// 	count.textContent=0
+// 	this.basketProduct=[]
+// 	this.totalPrice=0
+// }
