@@ -25,7 +25,7 @@ userNameInput.addEventListener('input', () => {
 })
 
 passwordInput.addEventListener('input', () => {
-	if (passwordInput.value === '') {
+	if (passwordInput.valye === '') {
 		wrongPassword.style.color = ''
 		wrongPassword.textContent = ''
 	} else {
