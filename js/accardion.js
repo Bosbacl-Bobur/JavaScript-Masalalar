@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener( function () {
     const accordionButtons = document.querySelectorAll(".accordion-button");
 
     accordionButtons.forEach(button => {
