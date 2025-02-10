@@ -13,7 +13,6 @@ h1 {
 	margin-bottom: 20px;
 }
 
-/* Control buttons and input */
 .controls {
 	display: flex;
 	gap: 20px;
@@ -21,7 +20,6 @@ h1 {
 	margin-bottom: 30px;
 }
 
-/* Styling for Buttons */
 button {
 	font-size: 1rem;
 	padding: 12px 20px;
