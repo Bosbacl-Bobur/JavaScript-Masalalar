@@ -6,7 +6,6 @@
 }
 
 body {
-    /* background: linear-gradient(135deg, #37721e, #2a983c); */
     background-color: #ffb400;
     display: flex;
     justify-content: center;
@@ -15,17 +14,24 @@ body {
 }
 
 .login-container {
-    background: rgba(255, 255, 255, 0.200);
-    box-shadow: 0px 0px 10px #b3ff00;
+    box-shadow: 0px 0px 10px blanchedalmond;
     padding: 30px;
     border-radius: 10px;
     width: 350px;
     text-align: center;
+    transition: all 2s;
+}
+.login-container:hover{
+    transform: rotateY(10px);
+    transform: rotateX(-10px);
+    transform: scale(1.1);
 }
 
 h2 {
     color: #fff;
     margin-bottom: 20px;
+    text-shadow: 4px 4px 3.5px #222222;
+    font-size: 32px;
 }
 
 .input-group {
@@ -38,6 +44,8 @@ h2 {
     font-size: 14px;
     display: block;
     margin-bottom: 5px;
+    text-shadow: 4px 4px 3.5px #222222;
+
 }
 
 .input-group input {
@@ -54,7 +62,8 @@ h2 {
     padding: 10px;
     /* background: #ffb400; */
     background: #ffb400;
-    box-shadow: 0px 0px 10px #b3ff00;
+    box-shadow: 0px 0px 10px blanchedalmond;
+    text-shadow: 3px 3px 3.5px #222222;
     border: none;
     border-radius: 5px;
     color: #fff;
