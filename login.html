@@ -1,103 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirish Sahifasi</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bank Login</title>
+		<link rel="icon" type="image/x-icon" href="./img/logo.jpg" />
+		<link rel="stylesheet" href="./style/login.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+	</head>
+	<body>
+		<div class="login-container">
+			<div class="login-box">
+				<h2>Bank Login</h2>
+				<div>
+					<div class="input-group">
+						<label for="username">Foydalanuvchi nomi</label>
+						<input type="text" id="username" placeholder="Foydalanuvchi nomini kiriting" required />
+					</div>
+					<div class="input-group">
+						<label for="password">Parol</label>
+						<input type="password" id="password" placeholder="Parol kodni kiriting" required />
+					</div>
+					<button type="submit" class="login-btn">Kirish</button>
+				</div>
+			</div>
+		</div>
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: black;
-}
-
-.login-container {
-  background: #0056b3;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
-}
-
-h2 {
-  margin-bottom: 15px;
-  color: #333;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-#error-message {
-  color: red;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-    </style>
-</head>
-<body>
-    <div class="login-container">
-        <h2>Login parol</h2>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="Login" required>
-            <input type="password" id="password" placeholder="Parol" required>
-            <button type="submit">Kirish</button>
-            <p id="error-message"></p>
-        </form>
-    </div>
-
-    <script src="script.js">
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-
-let username = document.getElementById("username").value;
-let password = document.getElementById("password").value;
-let errorMessage = document.getElementById("error-message");
-
-const validUser = {
-    username: "bosbacl713@gmail.com",
-    password: "minecraft.m.b"
-};
-
-if (username === validUser.username && password === validUser.password) {
-    alert("Tizimga muamosiz kirdingiz");
-    window.location.href = "dashboard.html";
-} else {
-  errorMessage.textContent = "Login yoki parol noto‘g‘ri!";
-}
-});
-
-    </script>
-</body>
+		<script src="./js/login.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	</body>
 </html>

@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(135deg, #37721e, #2a983c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.2);
+    /* width: 350px; */
+    text-align: center;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+
+  button {
+    /* background: #007bff; */
+    /* color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    /* transition: background 0.3s ease-in-out;  */
+    width: 100%;
+    padding: 8px 16px;
+	background-color: #218838;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 14px;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }

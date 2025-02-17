@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./style/masala.css">
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="name">Ism:</label>
+      <input type="text" id="name" />
+      <div class="error" id="nameError"></div>
+
+      <label for="age">Yosh:</label>
+      <input type="number" id="age" />
+      <div class="error" id="ageError"></div>
+
+      <label for="phone">Telefon raqam:</label>
+      <input type="text" id="phone" placeholder="+998XXXXXXXXX" />
+      <div class="error" id="phoneError"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" />
+      <div class="error" id="emailError"></div>
+
+      <button type="submit">Creat</button>
+    </form>
+
+    <!-- <script src="./js/masala.js"></script> -->
     <script src="./js/masala.js"></script>
-</body>
+  </body>
 </html>

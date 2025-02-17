@@ -493,3 +493,8 @@ input.addEventListener('input', () => {
 		booksContainer.appendChild(bookCard)
 	})
 })
+
+// От мечтателя к реалисту 
+// месть невиновных
+// maqona astorfirilog' hu azim allazina la ila hum  al hayyaqum va atubu ilayhi
+// Арендовать девушку 7
