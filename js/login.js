@@ -1,18 +1,18 @@
 const accounts = [
     {
-        owner: 'Sardorbek',
+        owner: 'Bobur',
         ownerImage: '../img/sardorbek.jpg',
-        userName: "SS2003",
-        password: "root123",
-        balance: 5000,
+        userName: "bobur-admin",
+        password: "bobur123",
+        balance: 400,
         transactions: []
     },
     {
-        owner: 'Sarvarbek',
+        owner: 'Asilbek',
         ownerImage: '../img/banker.jpg',
-        userName: "ST212",
-        password: "st123",
-        balance: 8000,
+        userName: "Asil-user",
+        password: "Asil456",
+        balance: 200,
         transactions: []
     }
 ]
@@ -21,8 +21,8 @@ const loginBtn = document.querySelector('.login-btn')
 const inputUser = document.querySelector('#username')
 const inputPin = document.querySelector('#password')
 
-loginBtn.addEventListener('click', (e) => {
-    e.preventDefault()
+loginBtn.addEventListener('click', (j) => {
+    j.preventDefault()
     const username = inputUser.value.trim().toLowerCase()
     const pin = inputPin.value.trim()
 
@@ -42,7 +42,7 @@ loginBtn.addEventListener('click', (e) => {
         }).showToast()
         setTimeout(() => {
             localStorage.setItem('currentUser', JSON.stringify(accountFind))
-            window.location.href = '../html/dashboard.html'
+            window.location.href = '../dashboard.html'
         }, 1000)
     } else {
         Toastify({

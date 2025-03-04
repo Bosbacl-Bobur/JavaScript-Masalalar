@@ -28,7 +28,7 @@ p {
 	background: linear-gradient(135deg, #37721e, #2a983c);
 	color: #ecf0f1;
 }
-.navbar__nav {
+.navbar__logo {
 	padding: 20px 40px;
 	display: flex;
 	justify-content: space-between;
@@ -374,24 +374,4 @@ select option {
 select option:hover {
 	background-color: #3498db;
 	color: white;
-}
-/* Responsivlik */
-@media (max-width: 900px) {
-	.dashboard-container {
-		grid-template-columns: 1fr;
-	}
-}
-
-@media (max-width: 768px) {
-	.navbar__menu {
-		display: none;
-	}
-
-	.navbar__user {
-		flex-direction: column;
-	}
-
-	.navbar__user button {
-		margin-top: 10px;
-	}
 }
