@@ -125,22 +125,3 @@ const products = {
         }
     }
 }
-// filterByCategory(type) {
-// 	if (type === "All") {
-// 		alert(`All: \n + this.productArr.map(p => ${p.productname} - ${p.price}$).join("\n")`);
-// 		return;
-// 	}
-
-// 	const filteredProducts = this.productArr.filter(product => product.productname.toLowerCase().includes(type.toLowerCase()));
-
-// 	if (filteredProducts.length > 0) {
-// 		alert(`${type} turidagi mahsulotlar:\n + filteredProducts.map(p => ${p.productname} - ${p.price}$).join("\n")`);
-// 	} else {
-// 		alert(`${type} turidagi mahsulotlar topilmadi!`);
-// 	}
-// },
-// remove() {
-// 	count.textContent=0
-// 	this.basketProduct=[]
-// 	this.totalPrice=0
-// }
