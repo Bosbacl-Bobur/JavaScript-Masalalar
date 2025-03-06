@@ -190,5 +190,3 @@
 // if (savedColor) {
 //     document.body.style.backgroundColor = savedColor; 
 // }
-
-// //get 41
