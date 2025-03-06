@@ -106,37 +106,89 @@
 // const clint = new order(100,7)
 // order.calculatePrice
 
-class order{
-  constructor(clientName, startLocation, endLocation, pricePerKm, distance) {
-      this.clientName = clientName; 
-      this.startLocation = startLocation; 
-      this.endLocation = endLocation; 
-      this.pricePerKm = pricePerKm; 
-      this.distance = distance; 
-      this.isCancelled = false; 
-  }
+// class order{
+//   constructor(clientName, startLocation, endLocation, pricePerKm, distance) {
+//       this.clientName = clientName; 
+//       this.startLocation = startLocation; 
+//       this.endLocation = endLocation; 
+//       this.pricePerKm = pricePerKm; 
+//       this.distance = distance; 
+//       this.isCancelled = false; 
+//   }
 
-  calculatePrice() {
-      if (this.isCancelled) {
-          return "Buyurtma bekor qilingan.";
-      }
-      return this.pricePerKm * this.distance + " sum";
-  }
+//   calculatePrice() {
+//       if (this.isCancelled) {
+//           return "Buyurtma bekor qilingan.";
+//       }
+//       return this.pricePerKm * this.distance + " sum";
+//   }
 
-  getOrderDetails() {
-      if (this.isCancelled) {
-          return "buyurtma bekor qilinadi";
-      }
-      return "odam:" + this.clientName + ", Marshrut: " + this.startLocation + " --> " + this.endLocation + ", Narx: " + this.calculatePrice();
-  }
+//   getOrderDetails() {
+//       if (this.isCancelled) {
+//           return "buyurtma bekor qilinadi";
+//       }
+//       return "odam:" + this.clientName + ", Marshrut: " + this.startLocation + " --> " + this.endLocation + ", Narx: " + this.calculatePrice();
+//   }
 
-  cancelOrder() {
-      this.isCancelled = true;
-  }
-}
+//   cancelOrder() {
+//       this.isCancelled = true;
+//   }
+// }
 
-let order1 = new order("mijoz", "Qarshidan", "Toshkentga", 65, 400);
+// let order1 = new order("mijoz", "Qarshidan", "Toshkentga", 65, 400);
 
-console.log(order1.getOrderDetails()); 
-order1.cancelOrder();
-console.log(order1.getOrderDetails()); 
+// console.log(order1.getOrderDetails()); 
+// order1.cancelOrder();
+// console.log(order1.getOrderDetails()); 
+
+
+
+
+
+// 1
+// function changeBackground() {
+//     let color = prompt("Fon rangini kiriting (masalan: red, blue, #f0f0f0):");
+//     if (color) {
+//         document.body.style.backgroundColor = color; 
+//         sessionStorage.setItem("backgroundColor", color); 
+//     }
+// }
+
+// let saved = sessionStorage.getItem("backgroundColor");
+// if (saved) {
+//     document.body.style.backgroundColor = saved; // Saqlangan rangni o‘rnatamiz
+// }
+
+// 2
+// if (!sessionStorage.getItem("visitTime")) {
+//     let now = new Date();
+//     let timeString = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+//     sessionStorage.setItem("visitTime", timeString);
+// }
+// let visitTime = sessionStorage.getItem("visitTime");
+// alert(`Siz saytda ${visitTime} da kirdingiz`);
+
+// 3
+// function saveName() {
+//     let name = prompt("Ismingizni kiriting:");
+//     if (name) {
+//         localStorage.setItem("userName", name);
+//         document.getElementById("welcomeMessage").innerText = "Salom, " + name + "!";
+//     }
+// }
+
+// 4
+// function changeBackground() {
+//     let color = prompt("Fon rangini kiriting (masalan: red, blue, #f0f0f0):");
+//     if (color) {
+//         document.body.style.backgroundColor = color; 
+//         localStorage.setItem("backgroundColor", color); 
+//     }
+// }
+
+// let savedColor = localStorage.getItem("backgroundColor");
+// if (savedColor) {
+//     document.body.style.backgroundColor = savedColor; 
+// }
+
+// //get 41
